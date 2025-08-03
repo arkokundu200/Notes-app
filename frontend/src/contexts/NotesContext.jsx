@@ -29,6 +29,13 @@ export const NotesProvider = ({ children }) => {
     }
   }, [user, searchQuery]);
 
+  // Initial fetch of notes
+  useEffect(() => {
+    if (user) {
+      fetchNotes();
+    }
+  }, [user]);
+
   const fetchNotes = async () => {
     setLoading(true);
     try {
@@ -128,4 +135,3 @@ export const NotesProvider = ({ children }) => {
     </NotesContext.Provider>
   );
 };
- 

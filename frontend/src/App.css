@@ -360,6 +360,7 @@ body {
 }
 
 .search-input {
+  color: #374151;
   width: 100%;
   padding: 12px 12px 12px 40px;
   border: 2px solid #e5e7eb;
