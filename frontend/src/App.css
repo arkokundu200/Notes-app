@@ -58,7 +58,7 @@ body {
 }
 
 .auth-card {
-  background: white;
+  background: rgb(218, 219, 224);
   border-radius: 12px;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   padding: 2rem;
@@ -110,14 +110,14 @@ body {
 .input-icon {
   position: absolute;
   left: 12px;
-  color: #9ca3af;
+  color: #1e1e1f;
   z-index: 1;
 }
 
 .input-wrapper input {
   width: 100%;
   padding: 12px 12px 12px 40px;
-  border: 2px solid #e5e7eb;
+  border: 2px solid #1a1b1b;
   border-radius: 8px;
   font-size: 0.875rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -134,7 +134,7 @@ body {
   right: 12px;
   background: none;
   border: none;
-  color: #9ca3af;
+  color: #0c0c0c;
   cursor: pointer;
   padding: 4px;
   border-radius: 4px;
@@ -142,7 +142,7 @@ body {
 }
 
 .password-toggle:hover {
-  color: #6b7280;
+  color: #1a1b1b;
 }
 
 .auth-button {
@@ -172,7 +172,7 @@ body {
 }
 
 .auth-footer p {
-  color: #6b7280;
+  color: #0c0c0c;
   font-size: 0.875rem;
 }
 
@@ -795,4 +795,135 @@ body {
   .note-actions {
     opacity: 1;
   }
+}
+
+/* Light & Dark Mode */
+.theme-toggle {
+    background: none;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    color: #6b7280;
+    transition: all 0.15s ease-in-out;
+}
+
+.theme-toggle:hover {
+    background: #f1f5f9;
+    color: #374151;
+}
+
+/* Dark Mode Styles */
+.dark .dashboard {
+  background: #1a202c;
+  color: #a0aec0;
+}
+
+.dark .header {
+  background: #2d3748;
+  border-bottom: 1px solid #4a5568;
+}
+
+.dark .header-left .logo h1, .dark .user-name {
+  color: #e2e8f0;
+}
+
+.dark .logout-btn, .dark .theme-toggle {
+  border-color: #4a5568;
+  color: #a0aec0;
+}
+
+.dark .logout-btn:hover, .dark .theme-toggle:hover {
+  background: #4a5568;
+  color: #e2e8f0;
+}
+
+.dark .welcome-section h1 {
+  color: #e2e8f0;
+}
+
+.dark .welcome-section p {
+  color: #a0aec0;
+}
+
+.dark .search-input {
+  background: #2d3748;
+  border-color: #4a5568;
+  color: #e2e8f0;
+}
+
+.dark .search-input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.dark .note-card {
+  background: #2d3748;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dark .note-title {
+  color: #e2e8f0;
+}
+
+.dark .note-content p, .dark .note-date {
+  color: #a0aec0;
+}
+
+.dark .note-actions button {
+  border-color: #4a5568;
+  color: #a0aec0;
+}
+
+.dark .note-actions button:hover {
+  background: #4a5568;
+  color: #e2e8f0;
+}
+
+.dark .pin-btn.active {
+    background: #fbbf24;
+    border-color: #fbbf24;
+    color: #1a202c;
+}
+
+.dark .note-modal {
+  background: #2d3748;
+  color: #a0aec0;
+}
+
+.dark .modal-header h2 {
+    color: #e2e8f0;
+}
+
+.dark .note-title-input, .dark .note-content-input {
+    background: #1a202c;
+    border-color: #4a5568;
+    color: #e2e8f0;
+}
+
+.dark .note-title-input:focus, .dark .note-content-input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+.dark .cancel-btn {
+    border-color: #4a5568;
+    color: #a0aec0;
+}
+
+.dark .cancel-btn:hover {
+    background: #4a5568;
+    color: #e2e8f0;
+}
+
+.dark .empty-state-content h2 {
+    color: #e2e8f0;
+}
+
+.dark .empty-state-content p {
+    color: #a0aec0;
+}
+
+.dark .section-title {
+    color: #e2e8f0;
 }

@@ -1,9 +1,11 @@
 import React from 'react';
 import { useAuth } from '../../contexts/AuthContext';
-import { LogOut, StickyNote } from 'lucide-react';
+import { useTheme } from '../../contexts/ThemeContext';
+import { LogOut, StickyNote, Sun, Moon } from 'lucide-react';
 
 const Header = () => {
   const { user, logout } = useAuth();
+  const { theme, toggleTheme } = useTheme();
 
   const handleLogout = () => {
     logout();
@@ -20,6 +22,9 @@ const Header = () => {
         </div>
 
         <div className="header-right">
+          <button onClick={toggleTheme} className="theme-toggle">
+            {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
+          </button>
           <div className="user-info">
             <div className="user-avatar">
               {user?.name?.charAt(0).toUpperCase()}
